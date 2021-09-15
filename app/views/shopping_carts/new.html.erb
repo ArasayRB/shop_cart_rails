@@ -1,0 +1,7 @@
+<h1><%= t '.title' %></h1>
+
+<%= render @shopping_carts %>
+
+<%= render 'form', shopping_cart: @shopping_cart %>
+
+<%= link_to t('.back'), shopping_carts_path %>

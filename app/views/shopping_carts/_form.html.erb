@@ -1,0 +1,24 @@
+<%= form_with(model: shopping_cart) do |form| %>
+  <% if shopping_cart.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= t 'global.forms.messages.errors.', count: shopping_cart.errors.count %>
+      </h2>
+
+      <ul>
+        <% shopping_cart.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.number_field :quantity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit t('global.forms.submit') %>
+  </div>
+<% end %>

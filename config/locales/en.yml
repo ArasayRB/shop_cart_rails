@@ -1,0 +1,75 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  activerecord:
+    models:
+      shopping_cart: "Shopping Cart"
+    attributes:
+      shopping_cart:
+        quantity: "Quantity"
+  global:
+    english_html: "<span class='h5 nav-link font-weight-bold text-light'>English</span>"
+    spanish_html: "<span class='h5 nav-link font-weight-bold text-light'>Español</span>"
+    forms:
+      messages:
+        errors:
+          one: "One error prohibited this shopping cart from being saved"
+          other: "%{count} errors prohibited this shopping cart from being saved"
+      submit: "Submit"
+      quantity: "Quantity"
+    menu:
+      home_html: "<span class='h5 nav-link font-weight-bold text-light'>Home</span>"
+      shopping_carts_html: "<span class='h5 nav-link font-weight-bold text-light'>Shopping Cart</span>"
+  home:
+    index:
+      welcome_mssg: "Welcome to Shopping Cart"
+      mssg_html: "Here you will manage your <strong>products</strong> before buy it"
+  shopping_carts:
+    new:
+      title: "Shopping Cart"
+      back: "Back"
+    show:
+      quantity: "Quantity"
+      back: "Back"
+      edit: "Edit"
+    edit:
+      title: "Editing Shopping Cart"
+      back: "Back"
+      show: "Show"
+    index:
+      title: "Shopping Carts"
+      quantity: "Quantity"
+      btn_new: "Add to Shopping Cart"
+      edit: "Update"
+      destroy: "Destroy"
+      show: "Show"
+  hello: "Hello world"

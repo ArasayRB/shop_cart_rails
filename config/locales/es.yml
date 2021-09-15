@@ -1,0 +1,44 @@
+es:
+  activerecord:
+    models:
+      shopping_cart: "Carro de Compra"
+    attributes:
+      shopping_cart:
+        quantity: "Cantidad"
+  global:
+    english_html: "<span class='h5 nav-link font-weight-bold text-light'>English</span>"
+    spanish_html: "<span class='h5 nav-link font-weight-bold text-light'>Español</span>"
+    forms:
+      messages:
+        errors:
+          one: "Un error prohibe que este carro de compras sea guardado"
+          other: "%{count} errores prohiben que este carro de compras sea guardado"
+      submit: "Enviar"
+      quantity: "Cantidad"
+    menu:
+      home_html: "<span class='h5 nav-link font-weight-bold text-light'>Inicio</span>"
+      shopping_carts_html: "<span class='h5 nav-link font-weight-bold text-light'>Carro de Compras</span>"
+  home:
+    index:
+      welcome_mssg: "Bienvenido a Carro de Compras"
+      mssg_html: "Aquí podrás administrar tus <strong>productos</strong> antes de comprarlos"
+  shopping_carts:
+    new:
+      title: "Carro de Compras"
+      back: "Atrás"
+    show:
+      quantity: "Cantidad"
+      back: "Atrás"
+      edit: "Editar"
+    edit:
+      title: "Editar Carro de Compras"
+      back: "Atrás"
+      show: "Mostrar"
+    index:
+      title: "Carro de Compras"
+      quantity: "Cantidad"
+      btn_new: "Añadir a Carro de Compras"
+      edit: "Actualizar"
+      destroy: "Eliminar"
+      show: "Mostrar"
+  hello: "Hola Mundo"
