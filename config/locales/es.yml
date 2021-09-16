@@ -2,12 +2,16 @@ es:
   activerecord:
     models:
       shopping_cart: "Carro de Compra"
+      user: "Usuario"
     attributes:
       shopping_cart:
         quantity: "Cantidad"
+      user:
+        email: "Correo"
+        password: "Contraseña"
+        password_confirmation: "Confirmar Contraseña"
+        remember_me: "Recuérdame"
   global:
-    english_html: "<span class='h5 nav-link font-weight-bold text-light'>English</span>"
-    spanish_html: "<span class='h5 nav-link font-weight-bold text-light'>Español</span>"
     forms:
       messages:
         errors:
@@ -16,8 +20,37 @@ es:
       submit: "Enviar"
       quantity: "Cantidad"
     menu:
-      home_html: "<span class='h5 nav-link font-weight-bold text-light'>Inicio</span>"
-      shopping_carts_html: "<span class='h5 nav-link font-weight-bold text-light'>Carro de Compras</span>"
+      home_html: "<span>Inicio</span>"
+      shopping_carts_html: "<span>Carro de Compras</span>"
+      english_html: "<span>English</span>"
+      spanish_html: "<span>Español</span>"
+      authenticate_html: "<span>AUTENTICAR</span>"
+      unauthenticate_html: "<span>CERRAR SESIÓN</span>"
+      register_html: "<span>REGISTRAR</span>"
+  devise:
+    passwords:
+      new:
+        title: "Olvidó su contraseña?"
+        submit: "Envíeme instrucciones para cambio de contraseña"
+    shared:
+      log_in: "Iniciar Sesión"
+      sign_up: "Registrarse"
+      forgot_password: "Olvidó su contraseña?"
+      confirmation_instructions: "No ha recibido instrucciones de confirmación?"
+      unlock_instructions: "No ha recibido instrucciones de desbloqueo?"
+      sign_in_with: "Iniciar Sesión con"
+    confirmations:
+      new:
+        title: "Reenvía instrucciones de confirmación"
+    registrations:
+      new:
+        title: "Registrar"
+        characters_min: "caracteres como mínimo"
+        submit: "Registrar"
+    sessions:
+      new:
+        title: "Iniciar Sesión"
+        submit: "Iniciar Sesión"
   home:
     index:
       welcome_mssg: "Bienvenido a Carro de Compras"

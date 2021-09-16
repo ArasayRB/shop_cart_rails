@@ -1,9 +1,9 @@
-<p id="notice"><%= notice %></p>
+
 
 <p>
   <strong><%= t '.quantity' %>:</strong>
   <%= @shopping_cart.quantity %>
 </p>
 
-<%= link_to t('.edit'), edit_shopping_cart_path(@shopping_cart) %> |
-<%= link_to t('.back'), shopping_carts_path %>
+<%= link_to t('.edit'), edit_shopping_cart_path(@shopping_cart), class: "btn btn-primary" %> |
+<%= link_to t('.back'), shopping_carts_path, class: "btn btn-dark" %>

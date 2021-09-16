@@ -33,12 +33,16 @@ en:
   activerecord:
     models:
       shopping_cart: "Shopping Cart"
+      user: "User"
     attributes:
       shopping_cart:
         quantity: "Quantity"
+      user:
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+        remember_me: "Remember Me"
   global:
-    english_html: "<span class='h5 nav-link font-weight-bold text-light'>English</span>"
-    spanish_html: "<span class='h5 nav-link font-weight-bold text-light'>Español</span>"
     forms:
       messages:
         errors:
@@ -47,8 +51,37 @@ en:
       submit: "Submit"
       quantity: "Quantity"
     menu:
-      home_html: "<span class='h5 nav-link font-weight-bold text-light'>Home</span>"
-      shopping_carts_html: "<span class='h5 nav-link font-weight-bold text-light'>Shopping Cart</span>"
+      home_html: "<span>Home</span>"
+      shopping_carts_html: "<span>Shopping Cart</span>"
+      english_html: "<span>English</span>"
+      spanish_html: "<span>Español</span>"
+      authenticate_html: "<span>LOGIN</span>"
+      unauthenticate_html: "<span>LOGOUT</span>"
+      register_html: "<span>REGISTER</span>"
+  devise:
+    passwords:
+      new:
+        title: "Forgot your password?"
+        submit: "Send me reset password instructions"
+    shared:
+      log_in: "Log In"
+      sign_up: "Sign Up"
+      forgot_password: "Forgot your password?"
+      confirmation_instructions: "Didn't receive confirmation instructions?"
+      unlock_instructions: "Didn't receive unlock instructions?"
+      sign_in_with: "Sign in with"
+    confirmations:
+      new:
+        title: "Resend confirmation instructions"
+    registrations:
+      new:
+        title: "Sign up"
+        characters_min: "characters minimum"
+        submit: "Register"
+    sessions:
+      new:
+        title: "Log in"
+        submit: "Log in"
   home:
     index:
       welcome_mssg: "Welcome to Shopping Cart"
