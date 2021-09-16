@@ -5,6 +5,7 @@
     <li class="nav-item"><%= link_to t('global.menu.home_html'), root_path, class:"nav-link h5 font-weight-bold text-light" %>  </li>
     <li class="nav-item"><%= link_to t('global.menu.shopping_carts_html'), new_shopping_cart_path, class:"nav-link h5 font-weight-bold text-light" %>  </li>
     <li class="nav-item"><%= link_to t('global.menu.products_html'), new_product_path, class:"nav-link h5 font-weight-bold text-light" %>  </li>
+    <li class="nav-item"><%= link_to t('global.menu.credit_cards_html'), new_credit_card_path, class:"nav-link h5 font-weight-bold text-light" %>  </li>
     <li class="nav-item"><%= link_to t('global.menu.english_html'), root_path(locale: :en), class:"nav-link h5 font-weight-bold text-light" %>  </li>
     <li class="nav-item"><%= link_to t('global.menu.spanish_html'), root_path(locale: :es), class:"nav-link h5 font-weight-bold text-light" %>  </li>
     <% if user_signed_in? %>

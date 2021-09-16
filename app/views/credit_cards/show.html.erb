@@ -1,0 +1,24 @@
+
+
+<p>
+  <strong><%= t '.number' %>:</strong>
+  <%= @credit_card.number %>
+</p>
+
+<p>
+  <strong><%= t '.cvv' %>:</strong>
+  <%= @credit_card.cvv %>
+</p>
+
+<p>
+  <strong><%= t '.cash' %>:</strong>
+  <%= @credit_card.cash %>
+</p>
+
+<p>
+  <strong><%= t '.expire' %>:</strong>
+  <%= @credit_card.expire %>
+</p>
+
+<%= link_to t('.edit'), edit_credit_card_path(@credit_card) %> |
+<%= link_to t('.back'), credit_cards_path %>

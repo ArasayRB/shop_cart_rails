@@ -34,6 +34,7 @@ en:
     models:
       shopping_cart: "Shopping Cart"
       product: "Product"
+      credit_card: "Credit Card"
       user: "User"
     attributes:
       shopping_cart:
@@ -45,6 +46,11 @@ en:
         price: "Price"
         um: "UM"
         img: "Image"
+      credit_card:
+        number: "Number"
+        cvv: "CVV"
+        cash: "Cash"
+        expire: "Expire"
       user:
         email: "Email"
         password: "Password"
@@ -61,7 +67,8 @@ en:
     menu:
       home_html: "<span>Home</span>"
       shopping_carts_html: "<span>Shopping Cart</span>"
-      products_html: "<span>Productos</span>"
+      products_html: "<span>Products</span>"
+      credit_cards_html: "<span>Credit Cards</span>"
       english_html: "<span>English</span>"
       spanish_html: "<span>Español</span>"
       authenticate_html: "<span>LOGIN</span>"
@@ -116,6 +123,11 @@ en:
       show: "Show"
       confirm: "Are you sure?"
   products:
+    forms:
+      messages:
+        errors:
+          one: "One error prohibited this product from being saved"
+          other: "%{count} errors prohibited this product from being saved"
     submit: "Send Product"
     new:
       title: "New Product"
@@ -142,6 +154,38 @@ en:
       um: "UM"
       img: "Image"
       btn_new: "Add to Products"
+      edit: "Update"
+      destroy: "Destroy"
+      show: "Show"
+      confirm: "Are you sure?"
+  credit_cards:
+    forms:
+      messages:
+        errors:
+          one: "One error prohibited this credit card from being saved"
+          other: "%{count} errors prohibited this credit card from being saved"
+    submit: "Save Credit Card"
+    new:
+      title: "Create Credit Card"
+      back: "Back"
+    show:
+      number: "Number"
+      cvv: "CVV"
+      cash: "Cash"
+      expire: "Expire"
+      back: "Back"
+      edit: "Edit"
+    edit:
+      title: "Editing Credit Card"
+      back: "Back"
+      show: "Show"
+    index:
+      title: "Credit Cards"
+      number: "Number"
+      cvv: "CVV"
+      cash: "Cash"
+      expire: "Expire"
+      btn_new: "Add to Credit Card"
       edit: "Update"
       destroy: "Destroy"
       show: "Show"

@@ -2,7 +2,8 @@ es:
   activerecord:
     models:
       shopping_cart: "Carro de Compra"
-      product: "Product"
+      product: "Producto"
+      credit_card: "Tarjeta de Crédito"
       user: "Usuario"
     attributes:
       shopping_cart:
@@ -14,6 +15,11 @@ es:
         price: "Precio"
         um: "UM"
         img: "Imagen"
+      credit_card:
+        number: "Número"
+        cvv: "CVV"
+        cash: "Saldo"
+        expire: "Expira"
       user:
         email: "Correo"
         password: "Contraseña"
@@ -31,6 +37,7 @@ es:
       home_html: "<span>Inicio</span>"
       shopping_carts_html: "<span>Carro de Compras</span>"
       products_html: "<span>Productos</span>"
+      credit_cards_html: "<span>Tarjetas de Crédito</span>"
       english_html: "<span>English</span>"
       spanish_html: "<span>Español</span>"
       authenticate_html: "<span>AUTENTICAR</span>"
@@ -85,6 +92,11 @@ es:
       show: "Mostrar"
       confirm: "Está seguro?"
   products:
+    forms:
+      messages:
+        errors:
+          one: "Un error prohibe que este producto sea guardado"
+          other: "%{count} errores prohiben que este producto sea guardado"
     submit: "Enviar Producto"
     new:
       title: "Nuevo Producto"
@@ -111,6 +123,38 @@ es:
       um: "UM"
       img: "Imagen"
       btn_new: "Agregar a Productos"
+      edit: "Actualizar"
+      destroy: "Destruir"
+      show: "Mostrar"
+      confirm: "Está seguro?"
+  credit_cards:
+    forms:
+      messages:
+        errors:
+          one: "Un error prohibe que esta tarjeta de crédito sea guardada"
+          other: "%{count} errores prohiben que esta tarjeta de crédito sea guardada"
+    submit: "Guardar Tarjeta de Crédito"
+    new:
+      title: "Crear Tarjeta de Crédito"
+      back: "Atrás"
+    show:
+      number: "Número"
+      cvv: "CVV"
+      cash: "Saldo"
+      expire: "Expira"
+      back: "Atrás"
+      edit: "Editar"
+    edit:
+      title: "Editando Tarjeta de Crédito"
+      back: "Atrás"
+      show: "Mostrar"
+    index:
+      title: "Tarjetas de Crédito"
+      number: "Número"
+      cvv: "CVV"
+      cash: "Saldo"
+      expire: "Expira"
+      btn_new: "Añadir Tarjeta de Crédito"
       edit: "Actualizar"
       destroy: "Destruir"
       show: "Mostrar"
