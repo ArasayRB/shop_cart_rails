@@ -16,7 +16,7 @@
         <td><%= shopping_cart.quantity %></td>
         <td><%= link_to t('.show'), shopping_cart %></td>
         <td><%= link_to t('.edit'), edit_shopping_cart_path(shopping_cart) %></td>
-        <td><%= link_to t('.destroy'), shopping_cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('.destroy'), shopping_cart, method: :delete, data: { confirm: t('.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

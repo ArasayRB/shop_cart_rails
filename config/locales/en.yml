@@ -33,10 +33,18 @@ en:
   activerecord:
     models:
       shopping_cart: "Shopping Cart"
+      product: "Product"
       user: "User"
     attributes:
       shopping_cart:
         quantity: "Quantity"
+      product:
+        code: "Code"
+        name: "Name"
+        stock: "Stock"
+        price: "Price"
+        um: "UM"
+        img: "Image"
       user:
         email: "Email"
         password: "Password"
@@ -53,6 +61,7 @@ en:
     menu:
       home_html: "<span>Home</span>"
       shopping_carts_html: "<span>Shopping Cart</span>"
+      products_html: "<span>Productos</span>"
       english_html: "<span>English</span>"
       spanish_html: "<span>Español</span>"
       authenticate_html: "<span>LOGIN</span>"
@@ -105,4 +114,36 @@ en:
       edit: "Update"
       destroy: "Destroy"
       show: "Show"
+      confirm: "Are you sure?"
+  products:
+    submit: "Send Product"
+    new:
+      title: "New Product"
+      back: "Back"
+    show:
+      code: "Code"
+      name: "Name"
+      stock: "Stock"
+      price: "Price"
+      um: "UM"
+      img: "Image"
+      back: "Back"
+      edit: "Edit"
+    edit:
+      title: "Editing Product"
+      back: "Back"
+      show: "Show"
+    index:
+      title: "Products"
+      code: "Code"
+      name: "Name"
+      stock: "Stock"
+      price: "Price"
+      um: "UM"
+      img: "Image"
+      btn_new: "Add to Products"
+      edit: "Update"
+      destroy: "Destroy"
+      show: "Show"
+      confirm: "Are you sure?"
   hello: "Hello world"

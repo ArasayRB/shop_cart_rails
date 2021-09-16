@@ -2,10 +2,18 @@ es:
   activerecord:
     models:
       shopping_cart: "Carro de Compra"
+      product: "Product"
       user: "Usuario"
     attributes:
       shopping_cart:
         quantity: "Cantidad"
+      product:
+        code: "Código"
+        name: "Nombre"
+        stock: "Almacenado"
+        price: "Precio"
+        um: "UM"
+        img: "Imagen"
       user:
         email: "Correo"
         password: "Contraseña"
@@ -22,6 +30,7 @@ es:
     menu:
       home_html: "<span>Inicio</span>"
       shopping_carts_html: "<span>Carro de Compras</span>"
+      products_html: "<span>Productos</span>"
       english_html: "<span>English</span>"
       spanish_html: "<span>Español</span>"
       authenticate_html: "<span>AUTENTICAR</span>"
@@ -74,4 +83,36 @@ es:
       edit: "Actualizar"
       destroy: "Eliminar"
       show: "Mostrar"
+      confirm: "Está seguro?"
+  products:
+    submit: "Enviar Producto"
+    new:
+      title: "Nuevo Producto"
+      back: "Atrás"
+    show:
+      code: "Código"
+      name: "Nombre"
+      stock: "Almacenado"
+      price: "Precio"
+      um: "UM"
+      img: "Imagen"
+      back: "Atrás"
+      edit: "Editar"
+    edit:
+      title: "Editando Producto"
+      back: "Atrás"
+      show: "Mostrar"
+    index:
+      title: "Productos"
+      code: "Código"
+      name: "Nombre"
+      stock: "Almacenado"
+      price: "Precio"
+      um: "UM"
+      img: "Imagen"
+      btn_new: "Agregar a Productos"
+      edit: "Actualizar"
+      destroy: "Destruir"
+      show: "Mostrar"
+      confirm: "Está seguro?"
   hello: "Hola Mundo"
