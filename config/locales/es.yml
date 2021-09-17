@@ -97,6 +97,19 @@ es:
       show: "Mostrar"
       confirm: "Está seguro?"
   products:
+    from_manager:
+      title: "Productos administrados por:"
+      code: "Código"
+      name: "Nombre"
+      stock: "Almacenado"
+      price: "Precio"
+      um: "UM"
+      img: "Imagen"
+      btn_new: "Agregar a Productos"
+      edit: "Actualizar"
+      destroy: "Destruir"
+      show: "Mostrar"
+      confirm: "Está seguro?"
     forms:
       messages:
         errors:
@@ -107,6 +120,7 @@ es:
       title: "Nuevo Producto"
       back: "Atrás"
     show:
+      title: "Producto"
       code: "Código"
       name: "Nombre"
       stock: "Almacenado"
@@ -115,6 +129,7 @@ es:
       img: "Imagen"
       back: "Atrás"
       edit: "Editar"
+      manage_by: "Administrado por:"
     edit:
       title: "Editando Producto"
       back: "Atrás"

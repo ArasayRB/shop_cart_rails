@@ -22,7 +22,7 @@ class ProductsController < ApplicationController
 
   # POST /products or /products.json
   def create
-    @product = Product.new(product_params)
+    @product = current_user.products.new(product_params)
 
     respond_to do |format|
       if @product.save
@@ -32,7 +32,7 @@ class ProductsController < ApplicationController
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
-    end
+    end#redirect_to @product
   end
 
   # PATCH/PUT /products/1 or /products/1.json
@@ -55,6 +55,11 @@ class ProductsController < ApplicationController
       format.html { redirect_to products_url, notice: "Product was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  #Products inserted by manager
+  def from_manager
+    @user= User.find(params[:user_id])
   end
 
   private

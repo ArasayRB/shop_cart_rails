@@ -4,4 +4,5 @@ class Product < ApplicationRecord
   validates :stock, presence: true
   validates :price, presence: true
   validates :um, presence: true
+  belongs_to :user
 end

@@ -128,6 +128,19 @@ en:
       show: "Show"
       confirm: "Are you sure?"
   products:
+    from_manager:
+      title: "Products manage by:"
+      code: "Code"
+      name: "Name"
+      stock: "Stock"
+      price: "Price"
+      um: "UM"
+      img: "Image"
+      btn_new: "Add to Products"
+      edit: "Update"
+      destroy: "Destroy"
+      show: "Show"
+      confirm: "Are you sure?"
     forms:
       messages:
         errors:
@@ -138,6 +151,7 @@ en:
       title: "New Product"
       back: "Back"
     show:
+      title: "Product"
       code: "Code"
       name: "Name"
       stock: "Stock"
@@ -146,6 +160,7 @@ en:
       img: "Image"
       back: "Back"
       edit: "Edit"
+      manage_by: "Manage By:"
     edit:
       title: "Editing Product"
       back: "Back"

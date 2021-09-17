@@ -1,6 +1,6 @@
 
 
-<h1><%= t '.title' %></h1>
+<h1><%= t '.title' %> <%= @user.email %></h1>
 
 <table>
   <thead>
@@ -27,7 +27,7 @@
   </tfoot>
 
   <tbody>
-    <% @products.each do |product| %>
+    <% @user.products.each do |product| %>
       <tr>
         <td><%= product.code %></td>
         <td><%= product.name %></td>
