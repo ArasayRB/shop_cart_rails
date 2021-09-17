@@ -35,6 +35,7 @@ en:
       shopping_cart: "Shopping Cart"
       product: "Product"
       credit_card: "Credit Card"
+      clasification: "Clasification"
       user: "User"
     attributes:
       shopping_cart:
@@ -46,6 +47,8 @@ en:
         price: "Price"
         um: "UM"
         img: "Image"
+      clasification:
+        clasification: "Clasification"
       credit_card:
         number: "Number"
         cvv: "CVV"
@@ -69,6 +72,7 @@ en:
       shopping_carts_html: "<span>Shopping Cart</span>"
       products_html: "<span>Products</span>"
       credit_cards_html: "<span>Credit Cards</span>"
+      clasifications_html: "<span>Clasifications</span>"
       english_html: "<span>English</span>"
       spanish_html: "<span>Español</span>"
       authenticate_html: "<span>LOGIN</span>"
@@ -185,6 +189,32 @@ en:
       cvv: "CVV"
       cash: "Cash"
       expire: "Expire"
+      btn_new: "Add to Credit Card"
+      edit: "Update"
+      destroy: "Destroy"
+      show: "Show"
+      confirm: "Are you sure?"
+  clasifications:
+    forms:
+      messages:
+        errors:
+          one: "One error prohibited this clasification being saved"
+          other: "%{count} errors prohibited this clasification from being saved"
+    submit: "Save Clasification"
+    new:
+      title: "Create Clasification"
+      back: "Back"
+    show:
+      clasification: "Clasification"
+      back: "Back"
+      edit: "Edit"
+    edit:
+      title: "Editing Clasification"
+      back: "Back"
+      show: "Show"
+    index:
+      title: "Clasifications"
+      clasification: "Clasification"
       btn_new: "Add to Credit Card"
       edit: "Update"
       destroy: "Destroy"

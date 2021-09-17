@@ -4,6 +4,7 @@ es:
       shopping_cart: "Carro de Compra"
       product: "Producto"
       credit_card: "Tarjeta de Crédito"
+      clasification: "Clasificación"
       user: "Usuario"
     attributes:
       shopping_cart:
@@ -20,6 +21,8 @@ es:
         cvv: "CVV"
         cash: "Saldo"
         expire: "Expira"
+      clasification:
+        clasification: "Clasificacion"
       user:
         email: "Correo"
         password: "Contraseña"
@@ -38,6 +41,7 @@ es:
       shopping_carts_html: "<span>Carro de Compras</span>"
       products_html: "<span>Productos</span>"
       credit_cards_html: "<span>Tarjetas de Crédito</span>"
+      clasifications_html: "<span>Clasificaciones</span>"
       english_html: "<span>English</span>"
       spanish_html: "<span>Español</span>"
       authenticate_html: "<span>AUTENTICAR</span>"
@@ -155,6 +159,32 @@ es:
       cash: "Saldo"
       expire: "Expira"
       btn_new: "Añadir Tarjeta de Crédito"
+      edit: "Actualizar"
+      destroy: "Destruir"
+      show: "Mostrar"
+      confirm: "Está seguro?"
+  clasifications:
+    forms:
+      messages:
+        errors:
+          one: "Un error prohibe que esta clasificación sea guardada"
+          other: "%{count} errores prohiben que esta clasificación sea guardada"
+    submit: "Guardar Clasificación"
+    new:
+      title: "Crear Clasificación"
+      back: "Atrás"
+    show:
+      clasification: "Clasificación"
+      back: "Atrás"
+      edit: "Editar"
+    edit:
+      title: "Editando Clasificación"
+      back: "Atrás"
+      show: "Mostrar"
+    index:
+      title: "Clasificación"
+      clasification: "Clasificación"
+      btn_new: "Añadir Clasificación"
       edit: "Actualizar"
       destroy: "Destruir"
       show: "Mostrar"
