@@ -29,6 +29,7 @@ es:
         password_confirmation: "Confirmar Contraseña"
         remember_me: "Recuérdame"
   global:
+    tools: "Herramientas"
     forms:
       messages:
         errors:

@@ -60,6 +60,7 @@ en:
         password_confirmation: "Password Confirmation"
         remember_me: "Remember Me"
   global:
+    tools: "Tools"
     forms:
       messages:
         errors:

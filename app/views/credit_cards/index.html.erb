@@ -9,9 +9,18 @@
       <th><%= t '.cvv' %></th>
       <th><%= t '.cash' %></th>
       <th><%= t '.expire' %></th>
-      <th colspan="3"></th>
+      <th colspan="3"><%= t 'global.tools' %></th>
     </tr>
   </thead>
+  <tfoot>
+    <tr>
+      <th><%= t '.number' %></th>
+      <th><%= t '.cvv' %></th>
+      <th><%= t '.cash' %></th>
+      <th><%= t '.expire' %></th>
+      <th colspan="3"><%= t 'global.tools' %></th>
+    </tr>
+  </tfoot>
 
   <tbody>
     <% @credit_cards.each do |credit_card| %>
@@ -20,9 +29,11 @@
         <td><%= credit_card.cvv %></td>
         <td><%= credit_card.cash %></td>
         <td><%= credit_card.expire %></td>
-        <td><%= link_to t('.show'), credit_card %></td>
-        <td><%= link_to t('.edit'), edit_credit_card_path(credit_card) %></td>
-        <td><%= link_to t('.destroy'), credit_card, method: :delete, data: { confirm: t('.confirm') } %></td>
+        <td>
+          <a class="fa fa-eye ml-3"><%= link_to t('.show'), credit_card %></a>
+          <a class="fa fa-edit ml-3"><%= link_to t('.edit'), edit_credit_card_path(credit_card) %></a>
+          <a class="fa fa-trash-alt ml-3"><%= link_to t('.destroy'), credit_card, method: :delete, data: { confirm: t('.confirm') } %></a>
+        </td>
       </tr>
     <% end %>
   </tbody>
