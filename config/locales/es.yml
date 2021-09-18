@@ -148,6 +148,17 @@ es:
       show: "Mostrar"
       confirm: "Está seguro?"
   credit_cards:
+    from_user:
+      title: "Tarjetas de Crédito de:"
+      number: "Número"
+      cvv: "CVV"
+      cash: "Saldo"
+      expire: "Expira"
+      btn_new: "Agregar Tarjeta de crédito"
+      edit: "Actualizar"
+      destroy: "Destruir"
+      show: "Mostrar"
+      confirm: "Está seguro?"
     forms:
       messages:
         errors:
@@ -158,12 +169,14 @@ es:
       title: "Crear Tarjeta de Crédito"
       back: "Atrás"
     show:
+      title: " Tarjeta de Crédito"
       number: "Número"
       cvv: "CVV"
       cash: "Saldo"
       expire: "Expira"
       back: "Atrás"
       edit: "Editar"
+      manage_by: "Pertenece a:"
     edit:
       title: "Editando Tarjeta de Crédito"
       back: "Atrás"

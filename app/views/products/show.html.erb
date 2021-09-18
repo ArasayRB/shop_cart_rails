@@ -35,7 +35,7 @@
     </div>
     <div class="card-footer center-block">
       <div class="row">
-       <p><%= t '.manage_by' %> <%= link_to @product.user.email, from_manager_products_path(@product), class:"font-weight-bold" %></p>
+       <p><%= t '.manage_by' %> <%= link_to @product.user.email, from_manager_products_path(@product.user), class:"font-weight-bold" %></p>
       </div>
       <%= link_to t('.edit'), edit_product_path(@product) %> |
       <%= link_to t('.back'), products_path %>

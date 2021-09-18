@@ -3,7 +3,9 @@ Rails.application.routes.draw do
     devise_for :users
     resources :shopping_carts
     resources :clasifications
-    resources :credit_cards
+    resources :credit_cards do
+      get 'user/:user_id', to: 'credit_cards#from_user', on: :collection, as: :from_user
+    end
     resources :products do
       get 'user/:user_id', to: 'products#from_manager', on: :collection, as: :from_manager
     end

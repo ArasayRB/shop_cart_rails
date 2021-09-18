@@ -3,4 +3,5 @@ class CreditCard < ApplicationRecord
   validates :cvv, presence: true
   validates :cash, presence: true
   validates :expire, presence: true
+  belongs_to :user
 end

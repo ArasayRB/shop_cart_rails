@@ -22,7 +22,7 @@ class CreditCardsController < ApplicationController
 
   # POST /credit_cards or /credit_cards.json
   def create
-    @credit_card = CreditCard.new(credit_card_params)
+    @credit_card = current_user.credit_cards.new(credit_card_params)
 
     respond_to do |format|
       if @credit_card.save
@@ -55,6 +55,11 @@ class CreditCardsController < ApplicationController
       format.html { redirect_to credit_cards_url, notice: "Credit card was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  # Credit Cards inserted by user
+  def from_user
+    @user= User.find(params[:user_id])
   end
 
   private

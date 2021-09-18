@@ -179,6 +179,17 @@ en:
       show: "Show"
       confirm: "Are you sure?"
   credit_cards:
+    from_user:
+      title: "Credits Cards of:"
+      number: "Number"
+      cvv: "CVV"
+      cash: "Cash"
+      expire: "Expire"
+      btn_new: "Add Credit Card"
+      edit: "Actualizar"
+      destroy: "Destruir"
+      show: "Mostrar"
+      confirm: "Está seguro?"
     forms:
       messages:
         errors:
@@ -189,12 +200,14 @@ en:
       title: "Create Credit Card"
       back: "Back"
     show:
+      title: "Credit Card"
       number: "Number"
       cvv: "CVV"
       cash: "Cash"
       expire: "Expire"
       back: "Back"
       edit: "Edit"
+      manage_by: "Belong to:"
     edit:
       title: "Editing Credit Card"
       back: "Back"
