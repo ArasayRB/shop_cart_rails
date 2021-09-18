@@ -148,17 +148,18 @@ es:
       show: "Mostrar"
       confirm: "Está seguro?"
   credit_cards:
-    from_user:
-      title: "Tarjetas de Crédito de:"
+    global:
       number: "Número"
       cvv: "CVV"
       cash: "Saldo"
       expire: "Expira"
-      btn_new: "Agregar Tarjeta de crédito"
+      btn_new: "Añadir Tarjeta de Crédito"
       edit: "Actualizar"
       destroy: "Destruir"
       show: "Mostrar"
       confirm: "Está seguro?"
+    from_user:
+      title: "Tarjetas de Crédito de:"
     forms:
       messages:
         errors:
@@ -170,10 +171,6 @@ es:
       back: "Atrás"
     show:
       title: " Tarjeta de Crédito"
-      number: "Número"
-      cvv: "CVV"
-      cash: "Saldo"
-      expire: "Expira"
       back: "Atrás"
       edit: "Editar"
       manage_by: "Pertenece a:"
@@ -183,15 +180,6 @@ es:
       show: "Mostrar"
     index:
       title: "Tarjetas de Crédito"
-      number: "Número"
-      cvv: "CVV"
-      cash: "Saldo"
-      expire: "Expira"
-      btn_new: "Añadir Tarjeta de Crédito"
-      edit: "Actualizar"
-      destroy: "Destruir"
-      show: "Mostrar"
-      confirm: "Está seguro?"
   clasifications:
     forms:
       messages:

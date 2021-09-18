@@ -1,0 +1,11 @@
+<tr>
+  <td><%= credit_card.number %></td>
+  <td><%= credit_card.cvv %></td>
+  <td><%= credit_card.cash %></td>
+  <td><%= credit_card.expire %></td>
+  <td>
+    <a class="fa fa-eye ml-3"><%= link_to t('credit_cards.global.show'), credit_card %></a>
+    <a class="fa fa-edit ml-3"><%= link_to t('credit_cards.global.edit'), edit_credit_card_path(credit_card) %></a>
+    <a class="fa fa-trash-alt ml-3"><%= link_to t('credit_cards.global.destroy'), credit_card, method: :delete, data: { confirm: t('credit_cards.global.confirm') } %></a>
+  </td>
+</tr>
