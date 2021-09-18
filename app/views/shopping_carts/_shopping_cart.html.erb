@@ -1,9 +1,8 @@
-<article>
-  <em>
-    <%= tag.time shopping_cart.created_at, datetime: shopping_cart.created_at %> <br>
-  </em>
-  <p>
-    <%= shopping_cart.quantity %>
-  </p>
-  <hr>
-</article>
+<tr>
+  <td><%= shopping_cart.quantity %></td>
+  <td>
+    <a class="fa fa-eye ml-3"><%= link_to t('shopping_carts.global.show'), shopping_cart %></a>
+    <a class="fa fa-edit ml-3"><%= link_to t('shopping_carts.global.edit'), edit_shopping_cart_path(shopping_cart) %></a>
+    <a class="fa fa-trash-alt ml-3"><%= link_to t('shopping_carts.global.destroy'), shopping_cart, method: :delete, data: { confirm: t('shopping_carts.global.confirm') } %></a>
+  </td>
+</tr>

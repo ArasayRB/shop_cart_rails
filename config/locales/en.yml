@@ -108,11 +108,18 @@ en:
       welcome_mssg: "Welcome to Shopping Cart"
       mssg_html: "Here you will manage your <strong>products</strong> before buy it"
   shopping_carts:
+    global:
+      quantity: "Quantity"
+      btn_new: "Add to Shopping Cart"
+      edit: "Update"
+      destroy: "Destroy"
+      show: "Show"
+      confirm: "Are you sure?"
     new:
       title: "Shopping Cart"
       back: "Back"
     show:
-      quantity: "Quantity"
+      title: "Shopping Cart"
       back: "Back"
       edit: "Edit"
     edit:
@@ -121,12 +128,6 @@ en:
       show: "Show"
     index:
       title: "Shopping Carts"
-      quantity: "Quantity"
-      btn_new: "Add to Shopping Cart"
-      edit: "Update"
-      destroy: "Destroy"
-      show: "Show"
-      confirm: "Are you sure?"
   products:
     global:
       code: "Code"
