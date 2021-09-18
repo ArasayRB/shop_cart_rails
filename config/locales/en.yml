@@ -128,8 +128,7 @@ en:
       show: "Show"
       confirm: "Are you sure?"
   products:
-    from_manager:
-      title: "Products manage by:"
+    global:
       code: "Code"
       name: "Name"
       stock: "Stock"
@@ -141,6 +140,8 @@ en:
       destroy: "Destroy"
       show: "Show"
       confirm: "Are you sure?"
+    from_manager:
+      title: "Products manage by:"
     forms:
       messages:
         errors:
@@ -152,12 +153,6 @@ en:
       back: "Back"
     show:
       title: "Product"
-      code: "Code"
-      name: "Name"
-      stock: "Stock"
-      price: "Price"
-      um: "UM"
-      img: "Image"
       back: "Back"
       edit: "Edit"
       manage_by: "Manage By:"
@@ -167,17 +162,6 @@ en:
       show: "Show"
     index:
       title: "Products"
-      code: "Code"
-      name: "Name"
-      stock: "Stock"
-      price: "Price"
-      um: "UM"
-      img: "Image"
-      btn_new: "Add to Products"
-      edit: "Update"
-      destroy: "Destroy"
-      show: "Show"
-      confirm: "Are you sure?"
   credit_cards:
     global:
       number: "Number"

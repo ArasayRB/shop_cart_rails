@@ -1,0 +1,13 @@
+<tr>
+  <td><%= product.code %></td>
+  <td><%= product.name %></td>
+  <td><%= product.stock %></td>
+  <td><%= product.price %></td>
+  <td><%= product.um %></td>
+  <td><%= product.img %></td>
+  <td>
+    <a class="fa fa-eye ml-3"><%= link_to t('products.global.show'), product %></a>
+    <a class="fa fa-edit ml-3"><%= link_to t('products.global.edit'), edit_product_path(product) %></a>
+    <a class="fa fa-trash-alt ml-3"><%= link_to t('products.global.destroy'), product, method: :delete, data: { confirm: t('products.global.confirm') } %></a>
+  </td>
+</tr>

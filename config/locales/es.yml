@@ -97,8 +97,7 @@ es:
       show: "Mostrar"
       confirm: "Está seguro?"
   products:
-    from_manager:
-      title: "Productos administrados por:"
+    global:
       code: "Código"
       name: "Nombre"
       stock: "Almacenado"
@@ -110,6 +109,8 @@ es:
       destroy: "Destruir"
       show: "Mostrar"
       confirm: "Está seguro?"
+    from_manager:
+      title: "Productos administrados por:"
     forms:
       messages:
         errors:
@@ -121,12 +122,6 @@ es:
       back: "Atrás"
     show:
       title: "Producto"
-      code: "Código"
-      name: "Nombre"
-      stock: "Almacenado"
-      price: "Precio"
-      um: "UM"
-      img: "Imagen"
       back: "Atrás"
       edit: "Editar"
       manage_by: "Administrado por:"
@@ -136,17 +131,6 @@ es:
       show: "Mostrar"
     index:
       title: "Productos"
-      code: "Código"
-      name: "Nombre"
-      stock: "Almacenado"
-      price: "Precio"
-      um: "UM"
-      img: "Imagen"
-      btn_new: "Agregar a Productos"
-      edit: "Actualizar"
-      destroy: "Destruir"
-      show: "Mostrar"
-      confirm: "Está seguro?"
   credit_cards:
     global:
       number: "Número"
