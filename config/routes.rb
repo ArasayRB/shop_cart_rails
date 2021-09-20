@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
     devise_for :users
-    resources :shopping_carts
-    resources :clasifications
+      resources :clasifications
     resources :credit_cards do
       get 'user/:user_id', to: 'credit_cards#from_user', on: :collection, as: :from_user
     end
