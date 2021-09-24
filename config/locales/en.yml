@@ -40,6 +40,8 @@ en:
     attributes:
       shopping_cart:
         quantity: "Quantity"
+        user_id: "User"
+        product_id: "Product"
       product:
         code: "Code"
         name: "Name"
@@ -110,11 +112,16 @@ en:
   shopping_carts:
     global:
       quantity: "Quantity"
+      product: "Product"
+      user: "User"
       btn_new: "Add to Shopping Cart"
       edit: "Update"
       destroy: "Destroy"
       show: "Show"
       confirm: "Are you sure?"
+    manage_cart:
+      btn_delete: "Remove"
+      btn_pay: "Pay"
     new:
       title: "Shopping Cart"
       back: "Back"
@@ -141,6 +148,11 @@ en:
       destroy: "Destroy"
       show: "Show"
       confirm: "Are you sure?"
+    available_products:
+      title: "Available Products"
+      btn_buy: "Add to Cart"
+      calificate: "Rating"
+      btn_send: "Send"
     from_manager:
       title: "Products manage by:"
     forms:
