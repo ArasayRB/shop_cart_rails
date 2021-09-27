@@ -4,6 +4,12 @@
     </div>
     <div class="card-body center-block">
       <p>
+        <% if @product.image.attached? %>
+         <image src="<%= url_for(@product.image) %>" height=200></image>
+        <% end %>
+      </p>
+
+      <p>
         <strong><%= t 'products.global.code' %>:</strong>
         <%= @product.code %>
       </p>
@@ -11,6 +17,11 @@
       <p>
         <strong><%= t 'products.global.name' %>:</strong>
         <%= @product.name %>
+      </p>
+
+      <p>
+        <strong><%= t 'products.global.description' %>:</strong>
+        <%= @product.description %>
       </p>
 
       <p>
@@ -28,10 +39,6 @@
         <%= @product.um %>
       </p>
 
-      <p>
-        <strong><%= t 'products.global.img' %>:</strong>
-        <%= @product.img %>
-      </p>
     </div>
     <div class="card-footer center-block">
       <div class="row">

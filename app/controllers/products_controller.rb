@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :authenticate_user!, only: [ :new, :edit, :update, :destroy]
+  before_action :authenticate_user!
   before_action :set_product, only: %i[ show edit update destroy ]
 
   # GET /products or /products.json
@@ -62,6 +62,12 @@ class ProductsController < ApplicationController
     @user= User.find(params[:user_id])
   end
 
+  #Show Products Catalog to add to current_cart
+  def catalog
+    @products = Product.where(status: 1)
+    @cart=current_cart
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -70,6 +76,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:code, :name, :stock, :price, :um, :img)
+      params.require(:product).permit(:code, :name, :stock, :price, :um, :image, :description)
     end
 end

@@ -48,7 +48,8 @@ en:
         stock: "Stock"
         price: "Price"
         um: "UM"
-        img: "Image"
+        image: "Image"
+        description: "Description"
       clasification:
         clasification: "Clasification"
       credit_card:
@@ -74,6 +75,7 @@ en:
       home_html: "<span>Home</span>"
       shopping_carts_html: "<span>Shopping Cart</span>"
       products_html: "<span>Products</span>"
+      catalog_html: "<span>Products Catalog</span>"
       credit_cards_html: "<span>Credit Cards</span>"
       clasifications_html: "<span>Clasifications</span>"
       english_html: "<span>English</span>"
@@ -112,9 +114,9 @@ en:
   shopping_carts:
     global:
       quantity: "Quantity"
+      id: "ID"
       product: "Product"
       user: "User"
-      btn_new: "Add to Shopping Cart"
       edit: "Update"
       destroy: "Destroy"
       show: "Show"
@@ -129,6 +131,9 @@ en:
       title: "Shopping Cart"
       back: "Back"
       edit: "Edit"
+      btn_empty: "Empty Cart"
+      amount: "Amount"
+      confirm: "Are you shure?"
     edit:
       title: "Editing Shopping Cart"
       back: "Back"
@@ -142,14 +147,16 @@ en:
       stock: "Stock"
       price: "Price"
       um: "UM"
-      img: "Image"
+      image: "Image"
+      description: "Description"
       btn_new: "Add to Products"
       edit: "Update"
       destroy: "Destroy"
       show: "Show"
       confirm: "Are you sure?"
-    available_products:
-      title: "Available Products"
+    catalog:
+      title: "Products Catalog"
+      shopping_cart: "Shopping Cart"
       btn_buy: "Add to Cart"
       calificate: "Rating"
       btn_send: "Send"
@@ -175,6 +182,10 @@ en:
       show: "Show"
     index:
       title: "Products"
+  store:
+    index:
+      title: "Product Catalog"
+      btn_new: "Add to Shopping Cart"
   credit_cards:
     global:
       number: "Number"

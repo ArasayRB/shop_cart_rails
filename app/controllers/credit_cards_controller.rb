@@ -1,5 +1,5 @@
 class CreditCardsController < ApplicationController
-  before_action :authenticate_user!, only: [ :new, :edit, :update, :destroy]
+  before_action :authenticate_user!
   before_action :set_credit_card, only: %i[ show edit update destroy ]
 
   # GET /credit_cards or /credit_cards.json

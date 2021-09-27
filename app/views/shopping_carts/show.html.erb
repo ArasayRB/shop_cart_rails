@@ -1,0 +1,38 @@
+
+
+<h1><%= t '.title' %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t 'products.global.code' %></th>
+      <th><%= t 'products.global.name' %></th>
+      <th><%= t 'products.global.description' %></th>
+      <th><%= t 'shopping_carts.global.quantity' %></th>
+      <th><%= t 'shopping_carts.global.price' %></th>
+      <th><%= t 'products.global.image' %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @shopping_cart.item_lines.each do |item| %>
+    <tr>
+      <td><%= item.product.code %></td>
+      <td><%= item.product.name %></td>
+      <td><%= item.product.description %></td>
+      <td><%= item.quantity %>&times;</td>
+      <td><%= number_to_currency(item.total_price, unit: "$") %></td>
+      <td>
+        <% if item.product.image.attached? %>
+         <image src="<%= url_for(item.product.image) %>" height=80></image>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <tr class="total_line">
+    <td colspan="2"><%= t '.amount', class:'font-weight-bold' %></td>
+    <td colspan="4" class="total_cell text-center"><%= number_to_currency(@shopping_cart.total_price, unit: "$")%></td>
+    </tr>
+  </tbody>
+</table>
+
+<i class="fas fa-trash-alt"></i><%= button_to t('.btn_empty'), @shopping_cart, method: :delete, confirm: t('.confirm'), class: 'btn btn-danger' %>

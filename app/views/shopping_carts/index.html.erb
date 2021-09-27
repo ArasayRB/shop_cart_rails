@@ -1,0 +1,30 @@
+
+
+<h1><%= t '.title' %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th class="text-center"><%= t 'shopping_carts.global.id' %></th>
+      <th class="text-center" colspan="3"><%= t 'shopping_carts.global.tools' %></th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th class="text-center"><%= t 'shopping_carts.global.id' %></th>
+      <th class="text-center" colspan="3"><%= t 'shopping_carts.global.tools' %></th>
+    </tr>
+  </tfoot>
+
+  <tbody>
+    <% @shopping_carts.each do |shopping_cart| %>
+      <tr>
+        <td class="text-center"><%= shopping_cart.id %></td>
+        <td class="text-center"><i class="fas fa-eye"></i><%= link_to 'Show', shopping_cart %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

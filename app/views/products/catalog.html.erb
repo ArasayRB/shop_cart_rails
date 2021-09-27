@@ -29,10 +29,27 @@
   </tfoot>
 
   <tbody>
-    <%= render @products %>
+    <% @products.each do |product| %>
+    <tr>
+      <td><%= product.code %></td>
+      <td><%= product.name %></td>
+      <td><%= product.description %></td>
+      <td><%= product.stock %></td>
+      <td><%= product.price %></td>
+      <td><%= product.um %></td>
+      <td>
+        <% if product.image.attached? %>
+         <image src="<%= url_for(product.image) %>" height=80></image>
+        <% end %>
+      </td>
+      <td>
+        <%= button_to t('.btn_buy'), item_lines_path(product_id: product), class: 'btn btn-primary' %>
+      </td>
+    </tr>
+    <% end %>
   </tbody>
 </table>
-
 <br>
 
-<%= link_to t('products.global.btn_new'), new_product_path %>
+
+<%= link_to t('.shopping_cart'), shopping_cart_path(@cart) %>

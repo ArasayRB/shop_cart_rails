@@ -1,3 +1,6 @@
+<% if @product.image.attached? %>
+ <image src="<%= url_for(@product.image) %>" height=200></image>
+<% end %>
 <%= form_with(model: product) do |form| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
@@ -12,7 +15,6 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= form.label :code %>
     <%= form.text_field :code %>
@@ -21,6 +23,11 @@
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.rich_text_area :description %>
   </div>
 
   <div class="field">
@@ -39,8 +46,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :img %>
-    <%= form.text_field :img %>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
   </div>
 
   <div class="actions">

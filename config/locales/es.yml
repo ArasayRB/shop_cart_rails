@@ -17,7 +17,8 @@ es:
         stock: "Almacenado"
         price: "Precio"
         um: "UM"
-        img: "Imagen"
+        image: "Imagen"
+        description: "Descripción"
       credit_card:
         number: "Número"
         cvv: "CVV"
@@ -43,6 +44,7 @@ es:
       home_html: "<span>Inicio</span>"
       shopping_carts_html: "<span>Carro de Compras</span>"
       products_html: "<span>Productos</span>"
+      catalog_html: "<span>Catálogo de Productos</span>"
       credit_cards_html: "<span>Tarjetas de Crédito</span>"
       clasifications_html: "<span>Clasificaciones</span>"
       english_html: "<span>English</span>"
@@ -81,9 +83,9 @@ es:
   shopping_carts:
     global:
       quantity: "Cantidad"
+      id: "ID"
       product: "Producto"
       user: "Usuario"
-      btn_new: "Añadir a Carro de Compras"
       edit: "Actualizar"
       destroy: "Eliminar"
       show: "Mostrar"
@@ -98,6 +100,9 @@ es:
       title: "Carro de Compra"
       back: "Atrás"
       edit: "Editar"
+      btn_empty: "Vaciar Carrito"
+      amount: "Total"
+      confirm: "Está usted seguro?"
     edit:
       title: "Editar Carro de Compras"
       back: "Atrás"
@@ -111,14 +116,16 @@ es:
       stock: "Almacenado"
       price: "Precio"
       um: "UM"
-      img: "Imagen"
+      image: "Imagen"
+      description: "Descripción"
       btn_new: "Agregar a Productos"
       edit: "Actualizar"
       destroy: "Destruir"
       show: "Mostrar"
       confirm: "Está seguro?"
-    available_products:
-      title: "Productos Disponibles"
+    catalog:
+      title: "Catálogo de Productos"
+      shopping_cart: "Carrito de Compras"
       btn_buy: "Añadir al Carro"
       calificate: "Calificación"
       btn_send: "Enviar"
@@ -144,6 +151,10 @@ es:
       show: "Mostrar"
     index:
       title: "Productos"
+  store:
+    index:
+      title: "Catálogo de Productos"
+      btn_new: "Añadir a Carro de Compras"
   credit_cards:
     global:
       number: "Número"
