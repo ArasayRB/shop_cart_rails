@@ -1,6 +1,9 @@
-
-
 <h1><%= t '.title' %></h1>
+<% if @shopping_cart.item_lines.empty?%>
+  <p class="alert-info mx-2 my-2 px-3 py-3 rounded font-weight-bold"><%= t '.msg_empty' %></p>
+
+<% else %>
+
 
 <table>
   <thead>
@@ -32,7 +35,29 @@
     <td colspan="2"><%= t '.amount', class:'font-weight-bold' %></td>
     <td colspan="4" class="total_cell text-center"><%= number_to_currency(@shopping_cart.total_price, unit: "$")%></td>
     </tr>
+    <tr class="total_line">
+    <td colspan="2"><%= t '.cash', class:'font-weight-bold' %></td>
+    <td colspan="4" class="total_cell text-center"><%= number_to_currency(@available_cash, unit: "$")%></td>
+    </tr>
+    <tr class="total_line">
+    <td colspan="1"><%= t '.pay' %></td>
+    <%= form_tag("/shopping_cart_payeds", method: "post") do %>
+      <td colspan="2" class="total_cell text-center">
+        <%= radio_button_tag(:payment_choice, "pick_up") %>
+        <%= label_tag(:paymant_pick, t(".pick_up")) %>
+      </td>
+      <td colspan="2" class="total_cell text-center">
+        <%= radio_button_tag(:payment_choice, "ups") %>
+        <%= label_tag(:paymant_ups, t(".ups")) %>
+      </td>
+
+      <td colspan="1"><i class="fas fa-cart-arrow-down"></i><%= submit_tag(t(".btn_pay"), class:"btn btn-primary") %></td>
+    <% end %>
+
+    </tr>
   </tbody>
 </table>
 
 <i class="fas fa-trash-alt"></i><%= button_to t('.btn_empty'), @shopping_cart, method: :delete, confirm: t('.confirm'), class: 'btn btn-danger' %>
+
+<% end %>

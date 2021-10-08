@@ -97,11 +97,17 @@ es:
       title: "Carro de Compras"
       back: "Atrás"
     show:
+      msg_empty: "El Carro está actualmente vacío."
       title: "Carro de Compra"
       back: "Atrás"
       edit: "Editar"
       btn_empty: "Vaciar Carrito"
       amount: "Total"
+      cash: "Saldo Disponible"
+      pay: "Escoja su opción de Pago"
+      pick_up: "Recogida ($0.00 USD)"
+      ups: "Envío ($5.00 USD)"
+      btn_pay: "Pago"
       confirm: "Está usted seguro?"
     edit:
       title: "Editar Carro de Compras"

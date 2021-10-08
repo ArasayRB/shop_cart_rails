@@ -9,7 +9,11 @@ class ShoppingCartsController < ApplicationController
 
   # GET /shopping_carts/1 or /shopping_carts/1.json
   def show
-
+    @user_card=current_user.credit_cards
+    @available_cash=0
+    @user_card.each do |card|
+      @available_cash+=card.cash
+    end
   end
 
   # GET /shopping_carts/new

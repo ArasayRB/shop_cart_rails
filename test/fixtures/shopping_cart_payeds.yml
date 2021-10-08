@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shopping_cart_id: 1
+  user_id: 1
+  payment_choice: MyString
+  cash: 1.5
+
+two:
+  shopping_cart_id: 1
+  user_id: 1
+  payment_choice: MyString
+  cash: 1.5

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     devise_for :users
     resources :item_lines
     resources :shopping_carts
+    post '/shopping_cart_payeds', to:'shopping_cart_payeds#paymant', as: :paymant
     resources :clasifications
     resources :credit_cards do
       get 'user/:user_id', to: 'credit_cards#from_user', on: :collection, as: :from_user

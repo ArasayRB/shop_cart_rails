@@ -1,0 +1,2 @@
+class ShoppingCartPayed < ApplicationRecord
+end

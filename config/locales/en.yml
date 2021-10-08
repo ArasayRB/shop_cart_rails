@@ -128,11 +128,17 @@ en:
       title: "Shopping Cart"
       back: "Back"
     show:
+      msg_empty: "Your Cart is currently empty."
       title: "Shopping Cart"
       back: "Back"
       edit: "Edit"
       btn_empty: "Empty Cart"
       amount: "Amount"
+      cash: "Available Cash"
+      pay: "Choice your Paymant"
+      pick_up: "Pick Up ($0.00 USD)"
+      ups: "UPS ($5.00 USD)"
+      btn_pay: "Pay"
       confirm: "Are you shure?"
     edit:
       title: "Editing Shopping Cart"
