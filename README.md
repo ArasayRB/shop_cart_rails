@@ -4,7 +4,7 @@ This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
-This small project is an example of how you can add or empty your cart with products on catalog, when add to cart automatically discount stock of product, and when empty cart that products go back the stock
+This small project is an example of how you can add or empty your cart with products on catalog, when add to cart automatically discount stock of product, and when empty cart that products go back the stock. In addition you can pay your products if you have cash on your credit card, if not you go to receive a message telling you your cash no is enough
 * Ruby version:
 6.1.4.1
 * Configuration:
